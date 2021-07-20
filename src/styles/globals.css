@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .snap {
+    scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint);
+  }
+  .snap-y {
+    --scroll-snap-direction: y;
+  }
+  .snap-mandatory {
+    --scroll-snap-constraint: mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+  .snap-center {
+    scroll-snap-align: center;
+  }
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+.subsection {
+  background-color: rgb(31, 41, 55);
+  position: relative;
+}
+
+.subsection::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: rgb(31, 41, 55);
+}
+
+.subsection::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  background-color: rgb(31, 41, 55);
+}
+
+.h-notfull {
+  height: calc(100vh - 64px);
+}
