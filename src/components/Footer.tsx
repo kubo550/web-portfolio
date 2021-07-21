@@ -1,10 +1,14 @@
-import { Link as SLink } from "react-scroll";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GrLinkTop } from "react-icons/gr";
+import type { FC } from "react";
 
-const Footer = () => {
+interface FooterProps {
+  scrollToTop?: () => void;
+}
+
+const Footer: FC<FooterProps> = ({ scrollToTop }) => {
   return (
-    <footer className='bg-gray-800 relative pt-1 border-b-2 border-white snap-center'>
+    <footer className='bg-gray-800 relative pt-1 border-b-2 snap-center'>
       <div className='container mx-auto px-6'>
         <div className='sm:flex sm:mt-8'>
           <div className='mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-evenly'>
@@ -44,18 +48,20 @@ const Footer = () => {
                   />
                 </a>
               </span>
-
-              <button className='inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-black uppercase transition bg-gray-100 rounded-full shadow ripple hover:shadow-lg hover:bg-gray-200 focus:outline-none transform translate-y-4'>
-                <SLink to='top' spy={true} smooth={true} duration={500}>
+              {scrollToTop && (
+                <button
+                  onClick={scrollToTop}
+                  className='inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-black uppercase transition bg-gray-100 rounded-full shadow ripple hover:shadow-lg hover:bg-gray-200 focus:outline-none transform translate-y-4'
+                >
                   <GrLinkTop size={20} />
-                </SLink>
-              </button>
+                </button>
+              )}
             </div>
           </div>
         </div>
       </div>
       <div className='container mx-auto px-6'>
-        <div className='mt-16 border-t-2 border-gray-300 flex flex-col items-center'>
+        <div className='mt-16 border-t-2 flex flex-col items-center'>
           <div className='sm:w-2/3 text-center py-6'>
             <p className='text-sm font-bold mb-2 text-gray-200'>
               © 2021 by Jakub Kurdziel

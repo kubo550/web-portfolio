@@ -2,7 +2,11 @@ import { motion, useAnimation } from "framer-motion";
 import { FC, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-const Animation: FC = ({ children }) => {
+interface AnimationProps {
+  readonly delay?: number;
+}
+
+const Animation: FC<AnimationProps> = ({ children, delay = 1 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -17,10 +21,10 @@ const Animation: FC = ({ children }) => {
       ref={ref}
       animate={controls}
       initial='hidden'
-      transition={{ duration: 0.4, delay: 0.65 }}
+      transition={{ duration: 0.4, delay: delay * 0.5 }}
       variants={{
-        visible: { opacity: 1, scale: 1, y: "0" },
-        hidden: { opacity: 0, scale: 0.4, y: "-100px" },
+        visible: { opacity: 1, scale: 1 },
+        hidden: { opacity: 0, scale: 0.4 },
       }}
     >
       {children}

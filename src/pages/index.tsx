@@ -6,37 +6,39 @@ import {
   Footer,
   Services,
   Acomplishments,
+  SectionDivider,
 } from "components";
-import { FC, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const Home = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const scrollToTop = () =>
+    ref.current!.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   return (
-    <div className='w-full h-notfull overflow-y-scroll overflow-x-hidden snap snap-y snap-mandatory'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      ref={ref}
+      className='w-full h-notfull overflow-y-scroll overflow-x-hidden snap snap-y snap-mandatory box-content pl-2 pr-5'
+    >
       <Hero />
+      <SectionDivider> One Scroll is enough :&#41; </SectionDivider>
       <About />
-      <Acomplishments />
-      <Projects />
+      <SectionDivider my>Peanuts aren’t technically nuts</SectionDivider>
       <Services />
+      <SectionDivider my>Did you sleep well tonight?</SectionDivider>
+      <Projects />
+      <SectionDivider my> I love you </SectionDivider>
+      <Acomplishments />
+      <SectionDivider my>Cows don’t have upper front teeth</SectionDivider>
       <Contact />
-      <Footer />
-    </div>
+      <Footer scrollToTop={scrollToTop} />
+    </motion.div>
   );
 };
 
 export default Home;
-
-interface ViewProps {
-  onScreen: () => void;
-}
-
-const View: FC<ViewProps> = ({ onScreen, children }) => {
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      onScreen();
-    }
-  }, [inView, onScreen]);
-  return <div ref={ref}>{children}</div>;
-};
