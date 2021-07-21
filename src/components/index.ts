@@ -1,15 +1,17 @@
+export * from "./Typography";
+
 export { default as Header } from "./Header";
 export { default as Footer } from "./Footer";
-
 export { default as Animation } from "./Animation";
-export { default as Section } from "./Section";
 
-export { default as Hero } from "./Hero/Hero";
-export { default as About } from "./About/About";
-export { default as Projects } from "./Projects/Projects";
-export { default as Contact } from "./Contact/Contact";
+// HOME
+export { default as Section } from "./Home/Section";
+export { default as Hero } from "./Home/Hero";
+export { default as About } from "./Home/About";
+export { default as Projects } from "./Home/Projects/Projects";
+export { default as Contact } from "./Home/Contact";
+export { default as Services } from "./Home/Services";
+export { default as Acomplishments } from "./Home/Acomplishments";
 
-export { default as Services } from "./Services";
-export { default as Acomplishments } from "./Acomplishments";
-
-export * from "./Typography";
+// ABOUt
+export { default as FAQ } from "./About/FAQ";
