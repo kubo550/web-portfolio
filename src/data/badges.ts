@@ -1,0 +1,32 @@
+export const badges = [
+  "https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript",
+  "https://img.shields.io/badge/-TypeScript-05122A?style=flat&logo=typescript",
+  "https://img.shields.io/badge/-python-05122A?style=flat&logo=python",
+  "https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5",
+  "https://img.shields.io/badge/-SCSS-05122A?style=flat&logo=SASS",
+  "https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js",
+  "https://img.shields.io/badge/-jest-05122A?style=flat&logo=jest",
+
+  "https://img.shields.io/badge/-React-05122A?style=flat&logo=react",
+  "https://img.shields.io/badge/-Next.js-05122A?style=flat&logo=Next.js",
+  "https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6",
+  "https://img.shields.io/badge/tailwindcss-05122A.svg?&style=flat&logo=tailwind-css&logoColor=white",
+  "https://img.shields.io/badge/-PHP-05122A?style=flat-square&logo=php&logoColor=4951aa",
+  "https://img.shields.io/badge/-Firebase-05122A?style=flat&logo=Firebase",
+  "https://img.shields.io/badge/-express-05122A?style=flat&logo=express",
+
+  "https://img.shields.io/badge/-Material_UI-05122A?style=flat&logo=material-ui",
+  "https://img.shields.io/badge/-Bootstrap-05122A?style=flat-square&logo=bootstrap&logoColor=563D7C",
+  "https://img.shields.io/badge/-Git-05122A?style=flat&logo=git",
+  "https://img.shields.io/badge/-Markdown-05122A?style=flat&logo=markdown",
+  "https://img.shields.io/badge/-styled_components-05122A?style=flat&logo=styled-components",
+  "https://img.shields.io/badge/-Vue.js-05122A?style=flat&logo=vue.js&logoColor=4FC08D",
+
+  "https://img.shields.io/badge/-Figma-05122A?style=flat&logo=Figma",
+  "http://img.shields.io/badge/-MySQL-05122A?style=flat&logo=mysql&logoColor=4479A1",
+  "https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github",
+  "https://img.shields.io/badge/-Docker-05122A?style=flat-square&logo=docker&logoColor=2496ed",
+  "https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC",
+  "https://img.shields.io/badge/-ramda-05122A?style=flat&logo=ramda",
+  "https://img.shields.io/badge/-lodash-05122A?style=flat&logo=lodash",
+];
