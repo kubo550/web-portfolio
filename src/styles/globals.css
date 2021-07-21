@@ -23,11 +23,13 @@
 body {
   position: relative;
   overflow: hidden;
+  background-color: rgb(15, 22, 36);
 }
 
 .subsection {
   background-color: rgb(31, 41, 55);
   position: relative;
+  min-height: 70vh;
 }
 
 .subsection::before {
