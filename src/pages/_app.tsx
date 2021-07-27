@@ -1,4 +1,6 @@
 import "styles/globals.css";
+import "styles/svgAnimations.css";
+
 import "nprogress/nprogress.css";
 
 import { AnimatePresence } from "framer-motion";

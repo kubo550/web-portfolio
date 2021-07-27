@@ -9,7 +9,7 @@ import {
   SectionDivider,
 } from "components";
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 const Home = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -23,7 +23,7 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       ref={ref}
-      className='w-full h-notfull overflow-y-scroll overflow-x-hidden snap snap-y snap-mandatory box-content pl-2 pr-5'
+      className='h-notfull overflow-y-scroll overflow-x-hidden snap snap-y snap-mandatory box-content'
     >
       <Hero />
       <SectionDivider> One Scroll is enough :&#41; </SectionDivider>
