@@ -1,13 +1,22 @@
 export const questions = [
   {
     id: "0",
-    question: "What is your refund policy?",
-    answer:
-      "If youre unhappy with your purchase for any reason, email us within 90 days and well refund you in full, no questions asked.",
+    question: "When do you start programming in JavaScript?",
+    answer: "In April 2019",
   },
   {
     id: "1",
-    question: "Do you offer technical support?",
-    answer: "No",
+    question: "Do you have any professional experience?",
+    answer: "Yes, I worked in an IT company during school internships",
+  },
+  {
+    id: "2",
+    question: "What kind of programming stack do You preffer?",
+    answer: "Next, Firebase, Typescript, Styled-Components / TailwindCSS",
+  },
+  {
+    id: "3",
+    question: "What are you learning lately?",
+    answer: "Testing components with jest & react testing library",
   },
 ];
