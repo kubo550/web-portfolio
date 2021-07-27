@@ -1,10 +1,14 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { navLinks } from "constants/navLinks";
+import { navLinks } from "data/navLinks";
+import { MobileNav } from "./MobileNav";
+import { useRouter } from "next/dist/client/router";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const { pathname } = useRouter();
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
@@ -21,7 +25,13 @@ const Header = () => {
                 <div className='ml-10 flex items-baseline space-x-4'>
                   {navLinks.map(({ path, title }) => (
                     <Link key={path} href={path}>
-                      <a className=' hover:bg-gray-700 text-white rounded-md text-sm font-medium'>
+                      <a
+                        className={` ${
+                          path === pathname
+                            ? "text-red-600"
+                            : "text-white hover:text-gray-300"
+                        } rounded-md text-md font-medium transition-colors  `}
+                      >
                         {title}
                       </a>
                     </Link>
@@ -83,22 +93,7 @@ const Header = () => {
           leaveFrom='opacity-100 scale-100'
           leaveTo='opacity-0 scale-95'
         >
-          {ref => (
-            <div className='sm:hidden'>
-              <div ref={ref} className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
-                {navLinks.map(({ path, title }) => (
-                  <Link key={path} href={path}>
-                    <a
-                      className='hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium'
-                      onClick={closeMobileMenu}
-                    >
-                      {title}
-                    </a>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          )}
+          {() => <MobileNav closeMobileMenu={closeMobileMenu} />}
         </Transition>
       </nav>
     </header>

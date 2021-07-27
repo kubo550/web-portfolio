@@ -1,16 +1,8 @@
 import { Section, SectionTitle } from "components";
-import { AnimatePresence, motion } from "framer-motion";
-import { FC, useEffect, useRef, useState } from "react";
+// @ts-ignore
+import TypeAnimation from "react-type-animation";
 
-const Hero: FC = () => {
-  const [displayinfo, setDisplayinfo] = useState(true);
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setDisplayinfo(false);
-    }, 3000);
-    return () => clearTimeout(timeout);
-  }, []);
-
+const Hero = () => {
   return (
     <Section id='hero'>
       <div className='absolute top-0 left-0 bottom-0 right-0 w-full h-full overflow-hidden'>
@@ -28,21 +20,19 @@ const Hero: FC = () => {
           title='Hi there!'
           subtitle='Welcome to my personal portfolio'
         >
-          <AnimatePresence exitBeforeEnter>
-            {displayinfo && (
-              <motion.div
-                exit={{ opacity: 0 }}
-                initial={{ y: 0 }}
-                animate={{
-                  y: ["5px", "-10px", "5px", "-5px", "5px", "-5px"],
-                  transition: { delay: 1.5 },
-                }}
-                className='hidden md:flex'
-              >
-                <p> Use Spacebar to moving around </p>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <TypeAnimation
+            cursor={false}
+            sequence={[
+              "Thanks for coming here!",
+              2000,
+              "I hope You will remember me",
+              2000,
+              "I wish You a nice trip",
+              2000,
+            ]}
+            wrapper='h4'
+            repeat={Infinity}
+          />
         </SectionTitle>
       </div>
     </Section>

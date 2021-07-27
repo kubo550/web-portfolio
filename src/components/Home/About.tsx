@@ -1,13 +1,12 @@
-import Animation from "components/Animation";
 import { SectionTitle, SectionButtons } from "components/Typography";
-import { Section } from "components";
+import { Section, AboutSvg, Animation } from "components";
 import Link from "next/link";
 import Image from "next/image";
 
 const About = () => {
   return (
     <Section>
-      <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6  gap-x-10'>
+      <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-x-0 lg:gap-x-10'>
         <div className='col-span-2 lg:col-span-3'>
           <Animation>
             <SectionTitle title='About me' subtitle='Let me introduce myself'>
@@ -29,13 +28,7 @@ const About = () => {
 
         <div className='my-0 md:my-5 col-span-3'>
           <Animation>
-            <Image
-              src='/images/about.svg'
-              alt='About me'
-              width={600}
-              height={450}
-              className='mx-auto'
-            />
+            <AboutSvg />
           </Animation>
         </div>
       </div>

@@ -1,10 +1,12 @@
 import { Disclosure } from "@headlessui/react";
 import { BiUpArrow } from "react-icons/bi";
 import { questions } from "data";
+import { SectionTitle } from "components/Typography";
 
-const FAQ = () => {
+export const FAQ = () => {
   return (
     <div className='w-full px-4 my-10'>
+      <SectionTitle subtitle='FAQ' />
       <div className='w-full max-w-md p-2 mx-auto bg-white rounded-2xl'>
         {questions.map(({ id, question, answer }) => (
           <Disclosure key={id}>
@@ -29,5 +31,3 @@ const FAQ = () => {
     </div>
   );
 };
-
-export default FAQ;

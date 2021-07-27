@@ -1,20 +1,14 @@
-import Image from "next/image";
 import { Section, Animation } from "components";
 import { SectionButtons, SectionTitle } from "components/Typography";
+import { ContactSvg } from "components";
 
 const Contact = () => {
   return (
     <Section id='contact'>
-      <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-x-10 gap-y-6'>
-        <div className='my-0 md:my-5 col-span-3 order-2 md:order-1'>
+      <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-x-0 lg:gap-x-10 gap-y-6'>
+        <div className='my-0 md:my-5 col-span-3 order-2 md:order-1 px-10'>
           <Animation>
-            <Image
-              src='/images/contact.svg'
-              alt='Contact me'
-              width={600}
-              height={450}
-              className='mx-auto'
-            />
+            <ContactSvg />
           </Animation>
         </div>
 
