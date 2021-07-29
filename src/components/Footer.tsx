@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ scrollToTop }) => {
   return (
-    <footer className='footer bg-gray-800 relative pt-1 snap-center'>
+    <footer className='footer bg-gray-800 relative pt-1 snap-center mt-auto'>
       <div className='container mx-auto px-6'>
         <div className='sm:flex sm:mt-8'>
           <div className='mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-evenly'>
@@ -35,7 +35,7 @@ const Footer: FC<FooterProps> = ({ scrollToTop }) => {
               </span>
 
               <span className='my-2 text-gray-200'>
-                Check my other
+                Check this and my other
                 <span className='text-red-600 '> projects </span>
                 on <span className='font-semibold'> GitHub</span>
                 <a
@@ -52,7 +52,7 @@ const Footer: FC<FooterProps> = ({ scrollToTop }) => {
               <span className='my-2 text-gray-200'>
                 Find me on my Linkedin profile
                 <a
-                  href='#'
+                  href='https://www.linkedin.com/in/jakub-kurdziel-449714205/'
                   className='inline-block text-gray-200 hover:underline '
                 >
                   <AiFillLinkedin

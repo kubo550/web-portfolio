@@ -1,7 +1,6 @@
-import { SectionTitle, SectionButtons } from "components/Typography";
-import { Section, AboutSvg, Animation } from "components";
+import { SectionTitle, Button } from "components/Typography";
 import Link from "next/link";
-import Image from "next/image";
+import { Section, AboutSvg, Animation } from "components";
 
 const About = () => {
   return (
@@ -15,13 +14,19 @@ const About = () => {
               this portfolio very professional. Also, we added smooth scroll in
               the portfolio which will make the scroll experience really
               elegant.
-              <SectionButtons
-                href='/about'
-                label='Read More'
-                secondHref='/files/Jakub_Kurdziel_CV.pdf'
-                secondLabel='Download CV'
-                download
-              />
+              <div className='flex w-full justify-around mt-4'>
+                <Link href='/about' passHref>
+                  <a>
+                    <Button type='profile' arrow>
+                      Profile
+                    </Button>
+                  </a>
+                </Link>
+
+                <a href='/files/Jakub_Kurdziel_CV.pdf' download>
+                  <Button type='download'>Download CV</Button>
+                </a>
+              </div>
             </SectionTitle>
           </Animation>
         </div>

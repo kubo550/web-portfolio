@@ -22,3 +22,4 @@ export { PastAchivments } from "./About/PastAchivments";
 
 // CONTACT
 export { ContactForm } from "./Contact/ContactForm";
+export { Alert } from "./Contact/Alert";

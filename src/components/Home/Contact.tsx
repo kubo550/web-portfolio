@@ -1,6 +1,7 @@
 import { Section, Animation } from "components";
-import { SectionButtons, SectionTitle } from "components/Typography";
+import { Button, SectionTitle } from "components/Typography";
 import { ContactSvg } from "components";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -19,13 +20,19 @@ const Contact = () => {
               Robert Zemeckis. It is a film adaptation of Carl 1985 novel of the
               same name; Sagan and his wife Ann Druyan wrote the story outline
               for the film.
-              <SectionButtons
-                href='/about'
-                label='Read More'
-                secondHref='/files/Jakub_Kurdziel_CV.pdf'
-                secondLabel='Download CV'
-                download
-              />
+              <div className='flex w-full justify-around mt-4'>
+                <Link href='/projects' passHref>
+                  <a>
+                    <Button type='code' arrow>
+                      Contact me
+                    </Button>
+                  </a>
+                </Link>
+
+                <a href='mailto:qwercy142@gmail.com'>
+                  <Button type='download'>E-mail</Button>
+                </a>
+              </div>
             </SectionTitle>
           </Animation>
         </div>

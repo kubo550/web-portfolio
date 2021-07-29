@@ -8,19 +8,17 @@ import { useState } from "react";
 
 const Acomplishments = () => {
   return (
-    <Animation>
-      <Section id='acomplishments' subsection>
-        <div className='py-20'>
-          <SectionTitle title='Personal Acomplishments' />
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 mt-10 '>
-            <AcomplishmentsTile label='Stackoverflow reputation' num={470} />
-            <AcomplishmentsTile label='Github contributions' num={2450} />
-            <AcomplishmentsTile label='% Progress Exercism TS Task' num={70} />
-            <AcomplishmentsTile label='Github Stars' num={30} />
-          </div>
+    <Section id='acomplishments' subsection>
+      <div className='py-20'>
+        <SectionTitle title='Personal Acomplishments' />
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 mt-10 '>
+          <AcomplishmentsTile label='Stackoverflow reputation' num={470} />
+          <AcomplishmentsTile label='Github contributions' num={2450} />
+          <AcomplishmentsTile label='% Progress Exercism TS Task' num={70} />
+          <AcomplishmentsTile label='Github Stars' num={30} />
         </div>
-      </Section>
-    </Animation>
+      </div>
+    </Section>
   );
 };
 

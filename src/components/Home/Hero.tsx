@@ -23,6 +23,8 @@ const Hero = () => {
           <TypeAnimation
             cursor={false}
             sequence={[
+              "Scroll down to more!",
+              2000,
               "Thanks for coming here!",
               2000,
               "I hope You will remember me",

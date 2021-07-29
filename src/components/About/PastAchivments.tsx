@@ -15,7 +15,7 @@ export const PastAchivments = () => {
             className='ml-2 text-yellow-300'
             download
           >
-            certificat
+            certificate
           </a>
         </div>
         <div className='col-span-1 bg-purple-900 px-2 py-4 rounded-xl flex justify-center items-center text-md md:text-lg text-white'>
