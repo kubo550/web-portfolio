@@ -1,15 +1,14 @@
-import {
-  Hero,
-  About,
-  Projects,
-  Contact,
-  Footer,
-  Services,
-  Acomplishments,
-  SectionDivider,
-} from "components";
+import dynamic from "next/dynamic";
+import { Hero, Footer, SectionDivider } from "components";
+
 import { motion } from "framer-motion";
-import { useLayoutEffect, useRef } from "react";
+import { useRef } from "react";
+
+const About = dynamic(() => import("components/Home/About"));
+const Services = dynamic(() => import("components/Home/Services"));
+const Projects = dynamic(() => import("components/Home/Projects/Projects"));
+const Acomplishments = dynamic(() => import("components/Home/Acomplishments"));
+const Contact = dynamic(() => import("components/Home/Contact"));
 
 const Home = () => {
   const ref = useRef<HTMLDivElement>(null);
