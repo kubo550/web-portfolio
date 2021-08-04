@@ -2,7 +2,7 @@ import type { Project } from "types";
 
 export const projects: Project[] = [
   {
-    id: "-3",
+    id: 1,
     name: "E-commerce",
     description:
       "Test online store to learn e-commerce with nextjs, headlessCMS & stripe",
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     finished: true,
   },
   {
-    id: "-2",
+    id: 2,
     name: "Typeracer Clone",
     description:
       "TypeRacer is a multiplayer online browser-based typing game. In TypeRacer, players complete typing tests of various texts as fast as possible,",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     finished: false,
   },
   {
-    id: "-1",
+    id: 3,
     name: "Notefy",
     description:
       "Make own note in less than 10 seconds and share unique link for your message to your friends.",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     finished: false,
   },
   {
-    id: "0",
+    id: 4,
     name: "Search Autocomplete",
     description:
       "Searching input with autocompleting example with jsonplaceholder api. Using React, Redux and TypeScript",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     finished: true,
   },
   {
-    id: "2",
+    id: 5,
     name: "Mc'd coupon generator",
     description: "Quick app to generate for you coupon from McDonalds. You can get food like hamburger, chips, icecreams etc.",
     type: "PWA",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     finished: true,
   },
   {
-    id: "3",
+    id: 6,
     name: "Messenger custom theme",
     description: "Chrome extention to change facebook messenger colors on page to whatever you want.",
     type: "Extention",
