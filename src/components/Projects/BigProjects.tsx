@@ -1,7 +1,6 @@
 import { Button } from "components/Typography";
 import { projects } from "data";
 import Image from "next/image";
-import Link from "next/link"
 export const BigProjects = () => {
   return (
     <div>
@@ -50,14 +49,13 @@ export const BigProjects = () => {
             </div>
           </div>
           <div
-            className={`col-start-1 row-start-1 flex sm:col-start-${idx % 2 === 0 ? "2" : "1"
-              } sm:row-span-3`}
+            className={`col-start-1 row-start-1 flex sm:col-start-2 sm:row-span-3`}
           >
             <div className='w-full grid grid-cols-3 grid-rows-2 gap-2'>
               <div className='relative col-span-3 row-span-2 my-auto flex justify-center'>
                 <Image
                   src={game.image}
-                  alt='gej'
+                  alt={game.name + " preview"}
                   placeholder='blur'
                   blurDataURL={game.image}
                   width={600}

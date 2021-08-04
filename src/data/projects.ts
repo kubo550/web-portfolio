@@ -70,34 +70,6 @@ export const projects: Project[] = [
     image: "https://raw.githubusercontent.com/kubo550/search-autocomplite/master/preview/preview.png",
     finished: true,
   },
-
-  {
-    id: "1",
-    name: "Dev Blog",
-    description:
-      "Blog for evry programmer who live alone to improve Your coding and cooking skills. Blog how to coode and how to cook all in one place.",
-    type: "PWA",
-    tech_stack: [
-      "Next.js",
-      "HeadlesCMS",
-      "TypeScript",
-      "TailwindCSS",
-      "MarkDown",
-    ],
-
-    tags: [
-      "framer-motion",
-      "react-icons",
-      "nProgress",
-      "dark mode",
-      "react-scroll",
-      "responsive",
-    ],
-    code: "https://github.com/kubo550/dev-blog",
-    preview: "https://",
-    image: "/images/projects/img3.jpg",
-    finished: false,
-  },
   {
     id: "2",
     name: "Mc'd coupon generator",
