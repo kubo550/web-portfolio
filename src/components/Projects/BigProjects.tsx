@@ -1,7 +1,7 @@
 import { Button } from "components/Typography";
 import { projects } from "data";
 import Image from "next/image";
-
+import Link from "next/link"
 export const BigProjects = () => {
   return (
     <div>
@@ -26,8 +26,12 @@ export const BigProjects = () => {
               }  row-start-2 px-4 pb-0`}
           >
             <div className='flex w-full justify-around'>
-              <Button secondary>Code</Button>
-              <Button secondary>Preview</Button>
+              <a href={game.code} target="_blank" rel="noreferrer" title="Check code on github">
+                <Button secondary>Code</Button>
+              </a>
+              <a href={game.preview} target="_blank" rel="noreferrer" title="Check effect">
+                <Button secondary>Preview</Button>
+              </a>
             </div>
           </div>
           <div
@@ -52,10 +56,10 @@ export const BigProjects = () => {
             <div className='w-full grid grid-cols-3 grid-rows-2 gap-2'>
               <div className='relative col-span-3 row-span-2 my-auto flex justify-center'>
                 <Image
-                  src='/images/projects/img2.jpg'
+                  src={game.image}
                   alt='gej'
                   placeholder='blur'
-                  blurDataURL='/images/projects/img2.jpg'
+                  blurDataURL={game.image}
                   width={600}
                   height={400}
                   className='absolute inset-0 w-full h-full object-cover bg-gray-100 sm:rounded-lg'
