@@ -1,6 +1,12 @@
 # My Portfolio
 
-Description here
+My personal official web portfolio. I used Next JS to make this project. Clean design with full responsiveness. You will find this portfolio very professional. Also, I added smooth scroll which will make the scroll experience really elegant.
+
+
+## Preview
+
+[LIVE](https://wonderful-hugle-16c351.netlify.app/) Deployed on netlify.
+
 
 ## Tech stack
 
@@ -41,5 +47,4 @@ Description here
  * Absolute imports
  * snap-scroll
   
- 
 </details>
