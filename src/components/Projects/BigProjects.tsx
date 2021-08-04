@@ -46,7 +46,7 @@ export const BigProjects = () => {
             </div>
           </div>
           <div
-            className={`col-start-2 row-start-1 flex sm:col-start-${idx % 2 === 0 ? "2" : "1"
+            className={`col-start-1 row-start-1 flex sm:col-start-${idx % 2 === 0 ? "2" : "1"
               } sm:row-span-3`}
           >
             <div className='w-full grid grid-cols-3 grid-rows-2 gap-2'>
