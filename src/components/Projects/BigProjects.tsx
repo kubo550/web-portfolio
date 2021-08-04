@@ -7,7 +7,7 @@ export const BigProjects = () => {
       {projects.map(game => (
         <div
           key={game.id}
-          className='grid grid-cols-1 sm:grid-cols-2 sm:px-8 sm:py-12 sm:gap-x-8 md:py-16 '
+          className='grid grid-cols-1  sm:px-8 sm:py-12 sm:gap-x-8 md:py-16 '
         >
           <div
             className={`relative z-10 col-start-1 sm:col-start-${game.id % 2 === 0 ? "1" : "2"

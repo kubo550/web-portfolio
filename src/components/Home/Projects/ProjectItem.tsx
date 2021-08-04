@@ -19,7 +19,6 @@ export const ProjectItem: FC<ItemProps> = ({ item }) => {
         <Link href={item.code}>
           <a target="_blank" rel="noreferrer" >
             <Button secondary>Code</Button>
-
           </a>
         </Link>
         <Link href={item.preview}>

@@ -53,8 +53,8 @@ export const projects: Project[] = [
       "mobile frendly",
     ],
     code: "https://github.com/kubo550/notefy",
-    preview: "https://",
-    image: "/images/projects/img2.jpg",
+    preview: "https://admiring-heyrovsky-a8f15b.netlify.app/",
+    image: "https://user-images.githubusercontent.com/43968748/128223199-2d793711-6535-45ae-b660-51361dea5b96.png",
     finished: false,
   },
   {
