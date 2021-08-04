@@ -5,8 +5,6 @@ My personal official web portfolio. I used Next JS to make this project. Clean d
 
 ## Preview
 
-[LIVE](https://wonderful-hugle-16c351.netlify.app/) Deployed on netlify.
-
 ![preview](https://user-images.githubusercontent.com/43968748/128223199-2d793711-6535-45ae-b660-51361dea5b96.png)
 
 ## Tech stack
