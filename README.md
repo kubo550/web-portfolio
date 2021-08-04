@@ -5,7 +5,10 @@ My personal official web portfolio. I used Next JS to make this project. Clean d
 
 ## Preview
 
-[LIVE](https://wonderful-hugle-16c351.netlify.app/)
+[LIVE](https://wonderful-hugle-16c351.netlify.app/) Deployed on netlify
+
+![image](https://user-images.githubusercontent.com/43968748/128247502-ceb2429b-d329-432c-b2c2-15acb31b01fa.png)
+
 
 ## Tech stack
 
