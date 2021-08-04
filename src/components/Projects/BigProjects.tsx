@@ -33,24 +33,10 @@ export const BigProjects = () => {
               </a>
             </div>
           </div>
+
           <div
-            className={`col-start-1 sm:col-start-${idx % 2 === 0 ? "1" : "2"
-              } row-start-3 space-y-3 px-4 mb-4`}
-          >
-            <div className='flex items-center flex-wrap text-black text-sm font-medium'>
-              {game.tech_stack.map(el => (
-                <div
-                  className=' px-2 py-1 rounded-xl mx-3 my-2 bg-transparent border-2 border-gray-400 text-gray-400'
-                  key={el}
-                >
-                  {el}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div
-            className={`col-start-1 row-start-1 flex sm:col-start-${idx % 2 === 0 ? "2" : "1"
-              } sm:row-span-3`}
+            className={`col-start-1 sm:col-start-${idx % 2 === 0 ? "2" : "1"
+              } row-start-1 flex  sm:row-span-3`}
           >
             <div className='w-full grid grid-cols-3 grid-rows-2 gap-2'>
               <div className='relative col-span-3 row-span-2 my-auto flex justify-center'>
@@ -64,6 +50,21 @@ export const BigProjects = () => {
                   className='absolute inset-0 w-full h-full object-cover bg-gray-100 sm:rounded-lg'
                 />
               </div>
+            </div>
+          </div>
+          <div
+            className={`col-start-1 sm:col-start-${idx % 2 === 0 ? "1" : "2"
+              } row-start-3 space-y-3 px-4 mb-4`}
+          >
+            <div className='flex items-center flex-wrap text-black text-sm font-medium'>
+              {game.tech_stack.map(el => (
+                <div
+                  className=' px-2 py-1 rounded-xl mx-3 my-2 bg-transparent border-2 border-gray-400 text-gray-400'
+                  key={el}
+                >
+                  {el}
+                </div>
+              ))}
             </div>
           </div>
         </div>
