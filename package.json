@@ -35,7 +35,7 @@
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.4",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tailwindcss-scroll-snap": "^1.1.0",
     "typescript": "4.3.5"
   }
