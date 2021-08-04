@@ -53,7 +53,7 @@ const Contact = () => {
           {error && (
             <Alert
               type='error'
-              text='Error, try again later'
+              text='Error, please try again later or send normal email.'
               onSubmit={() => setError(false)}
             />
           )}
