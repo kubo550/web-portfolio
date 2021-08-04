@@ -39,7 +39,7 @@ export const projects: Project[] = [
     finished: false,
   },
   {
-    id: "0",
+    id: "-1",
     name: "Notefy",
     description:
       "Make own note in less than 10 seconds and share unique link for your message to your friends.",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     finished: false,
   },
   {
-    id: "-1",
+    id: "0",
     name: "Search Autocomplete",
     description:
       "Searching input with autocompleting example with jsonplaceholder api. Using React, Redux and TypeScript",
