@@ -12,9 +12,9 @@ const Acomplishments = () => {
       <div className='py-20'>
         <SectionTitle title='Personal Acomplishments' />
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 mt-10 '>
-          <AcomplishmentsTile label='Stackoverflow reputation' num={470} />
+          <AcomplishmentsTile label='Stackoverflow reputation' num={500} />
           <AcomplishmentsTile label='Github contributions' num={2450} />
-          <AcomplishmentsTile label='% Progress Exercism TS Task' num={70} />
+          <AcomplishmentsTile label='Progress Exercism TS Task' num={70} percent />
           <AcomplishmentsTile label='Github Stars' num={30} />
         </div>
       </div>
@@ -54,9 +54,10 @@ const AcomplishmentsTile: FC<TileProps> = ({ num, percent, label }) => {
     >
       <p className='text-3xl font-bold lg:text-4xl text-center w-full'>
         {countUp}
-        {percent ? "%" : ""}+
+        {percent && "%"}+
       </p>
       <p className='mt-4'>{label}</p>
+
     </div>
   );
 };

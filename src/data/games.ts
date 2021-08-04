@@ -31,19 +31,7 @@ export const gamesData = [
     code: "https://github.com/kubo550/rock-paper-scissors",
     preview: "https://kubo550.github.io/rock-paper-scissors/",
     image:
-      "https://raw.githubusercontent.com/kubo550/candy-crush-clone/master/candy-preview.png?raw=true",
-    tech_stack: ["react", "typescript", "context", "sass", "styled-components"],
-  },
-  {
-    id: "3",
-    type: "game",
-    name: "Sudoku",
-    description:
-      "Sudoku is one of the most popular puzzle games of all time. The goal of Sudoku is to fill a 9×9 grid with numbers so that each row",
-    code: "https://github.com/kubo550/sudoku",
-    preview: "https://kubo550.github.io/rock-paper-scissors/",
-    image:
-      "https://raw.githubusercontent.com/kubo550/candy-crush-clone/master/candy-preview.png?raw=true",
+      "https://raw.githubusercontent.com/kubo550/rock-paper-scissors/master/preview.png",
     tech_stack: ["react", "typescript", "context", "sass", "styled-components"],
   },
   {
@@ -51,7 +39,7 @@ export const gamesData = [
     type: "animation",
     name: "Heart Fireworks",
     description:
-      "Tam zastaje załamaną Telimenę, która w pewnym momencie zaczyna biec, padać i miotać się. Tadeusz",
+      "Heart Fireworks. simple fireworks animation in p5js library with typescript.",
     preview: "https://e3zfp.csb.app/",
     code: "https://github.com/kubo550/heart-fireworks-p5ts",
     image:
@@ -69,5 +57,17 @@ export const gamesData = [
     image:
       "https://github.com/kubo550/particles-behaviours-p5.ts/blob/main/p5ts-preview.png?raw=true",
     tech_stack: ["Animation", "Canvas", "p5.js", "Typescript"],
+  },
+  {
+    id: "3",
+    type: "game",
+    name: "Sudoku",
+    description:
+      "Sudoku is one of the most popular puzzle games of all time. The goal of Sudoku is to fill a 9×9 grid with numbers so that each row",
+    code: "https://github.com/kubo550/sudoku",
+    preview: "https://kubo550.github.io/sudoku",
+    image:
+      "https://raw.githubusercontent.com/kubo550/sudoku/master/sudoku_preview.png",
+    tech_stack: ["react", "typescript", "context", "sass", "styled-components"],
   },
 ];

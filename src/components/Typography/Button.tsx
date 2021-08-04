@@ -11,6 +11,7 @@ type ButtonType = "profile" | "download" | "contact" | "code";
 interface ButtonProps {
   readonly type?: ButtonType;
   readonly arrow?: boolean;
+  readonly secondary?: boolean;
   readonly children: ReactNode;
 }
 
@@ -22,18 +23,19 @@ const iconByType = new Map<ButtonType, ReturnType<typeof FaUserAlt>>([
 ]);
 
 export const Button = forwardRef<HTMLDivElement, ButtonProps>(
-  ({ children, type, arrow }, ref) => (
+  ({ children, type, arrow, secondary }, ref) => (
     <div
       ref={ref}
-      className='flex flex-row items-center px-4 py-2 rounded-full bg-gradient-to-bl from-purple-600 '
+      className={`flex text-md md:text-xl flex-row items-center px-4 py-2 my-4 rounded-full bg-gradient-to-bl ${secondary ? "from-red-500 text-white" : "from-purple-600"
+        } `}
     >
       {type && (
-        <div className=' w-10 h-10 border-white border-2 flex items-center justify-center rounded-full '>
+        <div className=' w-10 h-10 border-white hidden sm:flex border-3  items-center justify-center rounded-full '>
           {iconByType.get(type)}
         </div>
       )}
 
-      <p className='uppercase mx-2 text-base'> {children} </p>
+      <p className='uppercase mx-2 text-sm md:text-base'> {children} </p>
       {arrow && <BiRightArrow className='mr-2' size={12} />}
     </div>
   )

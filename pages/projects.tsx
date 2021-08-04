@@ -1,8 +1,5 @@
-import Image from "next/image";
-
 import { motion } from "framer-motion";
-import { gamesData } from "data/games";
-import { Footer, SectionTitle } from "components";
+import { Footer, SectionDivider, SectionTitle } from "components";
 import { Games } from "components/Projects/Games";
 import { BigProjects } from "components/Projects/BigProjects";
 
@@ -16,6 +13,7 @@ const Projects = () => {
     >
       <SectionTitle title='Big Projects' />
       <BigProjects />
+      <SectionDivider />
       <SectionTitle title='Games & animations' />
       <Games />
       <Footer />

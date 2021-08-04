@@ -5,8 +5,8 @@ import { Section, AboutSvg, Animation } from "components";
 const About = () => {
   return (
     <Section>
-      <div className='grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-x-0 lg:gap-x-10'>
-        <div className='col-span-2 lg:col-span-3'>
+      <div className='grid grid-cols-1 md:grid-cols-4  gap-x-0 lg:gap-x-10'>
+        <div className='col-span-2'>
           <Animation>
             <SectionTitle title='About me' subtitle='Let me introduce myself'>
               A portfolio for a web designer. We used React JS to make this
@@ -31,7 +31,7 @@ const About = () => {
           </Animation>
         </div>
 
-        <div className='my-0 md:my-5 col-span-3'>
+        <div className='my-0 sm:my-5 col-span-2 '>
           <Animation>
             <AboutSvg />
           </Animation>

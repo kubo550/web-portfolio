@@ -2,6 +2,24 @@ import type { Project } from "types";
 
 export const projects: Project[] = [
   {
+    id: "-3",
+    name: "E-commerce",
+    description:
+      "Test online store to learn e-commerce with nextjs, headlessCMS & stripe",
+    type: "shop",
+    tech_stack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Commerce.js",
+    ],
+    tags: ["shop", "headlessCMS", "context", "stripe"],
+    code: "https://github.com/kubo550/ecommerce",
+    preview: "https://lucid-wescoff-783163.netlify.app/",
+    image: "https://user-images.githubusercontent.com/43968748/128085334-6dc74a6a-3446-42ee-b482-e8a4ea0a7cf7.PNG",
+    finished: true,
+  },
+  {
     id: "-2",
     name: "Typeracer Clone",
     description:
@@ -18,18 +36,7 @@ export const projects: Project[] = [
     code: "https://github.com/kubo550/type-racer-clone",
     preview: "https://",
     image: "/images/projects/img1.jpg",
-  },
-  {
-    id: "-1",
-    name: "Search Autocomplete",
-    description:
-      "Searching input with autocompleting example with jsonplaceholder api. Using React, Redux and TypeScript",
-    type: "Example",
-    tech_stack: ["React", "Redux", "TypeScript", "Module CSS"],
-    tags: ["Thunk", "Search", "Axios", "Accessibility", "Optymalization"],
-    code: "https://github.com/kubo550/search-autocomplite",
-    preview: "https://kubo550.github.io/search-autocomplite/",
-    image: "/images/projects/img4.jpg",
+    finished: false,
   },
   {
     id: "0",
@@ -48,7 +55,22 @@ export const projects: Project[] = [
     code: "https://github.com/kubo550/notefy",
     preview: "https://",
     image: "/images/projects/img2.jpg",
+    finished: false,
   },
+  {
+    id: "-1",
+    name: "Search Autocomplete",
+    description:
+      "Searching input with autocompleting example with jsonplaceholder api. Using React, Redux and TypeScript",
+    type: "Example",
+    tech_stack: ["React", "Redux", "TypeScript", "Module CSS"],
+    tags: ["Thunk", "Search", "Axios", "Accessibility", "Optymalization"],
+    code: "https://github.com/kubo550/search-autocomplite",
+    preview: "https://kubo550.github.io/search-autocomplite/",
+    image: "https://raw.githubusercontent.com/kubo550/search-autocomplite/master/preview/preview.png",
+    finished: true,
+  },
+
   {
     id: "1",
     name: "Dev Blog",
@@ -74,5 +96,48 @@ export const projects: Project[] = [
     code: "https://github.com/kubo550/dev-blog",
     preview: "https://",
     image: "/images/projects/img3.jpg",
+    finished: false,
+  },
+  {
+    id: "2",
+    name: "Mc'd coupon generator",
+    description: "Quick app to generate for you coupon from McDonalds. You can get food like hamburger, chips, icecreams etc.",
+    type: "PWA",
+    tech_stack: ["Vue.js", "TypeScript", "Sass"],
+
+    tags: [
+      "framer-motion",
+      "react-icons",
+      "nProgress",
+      "dark mode",
+      "react-scroll",
+      "responsive",
+    ],
+    code: "https://github.com/kubo550/vue-mcd-coupons",
+    preview: "https://k8h8v.csb.app/",
+    image:
+      "https://raw.githubusercontent.com/kubo550/vue-mcd-coupons/master/mcd-vue-preview.png",
+    finished: true,
+  },
+  {
+    id: "3",
+    name: "Messenger custom theme",
+    description: "Chrome extention to change facebook messenger colors on page to whatever you want.",
+    type: "Extention",
+    tech_stack: ["chrome extention", "TypeScript", "React"],
+
+    tags: [
+      "framer-motion",
+      "react-icons",
+      "nProgress",
+      "dark mode",
+      "react-scroll",
+      "responsive",
+    ],
+    code: "https://github.com/kubo550/dark-messenger-extention",
+    preview: "https://github.com/kubo550/dark-messenger-extention",
+    image:
+      "https://raw.githubusercontent.com/kubo550/dark-messenger-extention/master/dark-messenger-preview.png",
+    finished: false,
   },
 ];

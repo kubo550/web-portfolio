@@ -8,4 +8,5 @@ export interface Project {
   image: string;
   tech_stack: string[];
   tags: string[];
+  finished: boolean;
 }
