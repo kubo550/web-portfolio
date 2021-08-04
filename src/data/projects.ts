@@ -35,7 +35,7 @@ export const projects: Project[] = [
     tags: ["auth", "CRUD app", "react-hook-form", "context", "API"],
     code: "https://github.com/kubo550/type-racer-clone",
     preview: "https://",
-    image: "/images/projects/img1.jpg",
+    image: "https://raw.githubusercontent.com/kubo550/TypeRacer-clone/master/trc-pv1.png",
     finished: false,
   },
   {

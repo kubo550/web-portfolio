@@ -16,21 +16,19 @@ const Contact = () => {
         <div className='col-span-2 order-1 md:order-2 lg:col-span-3'>
           <Animation>
             <SectionTitle title='Contact' subtitle="Let's be in touch">
-              Contact is a 1997 American science fiction drama film directed by
-              Robert Zemeckis. It is a film adaptation of Carl 1985 novel of the
-              same name; Sagan and his wife Ann Druyan wrote the story outline
-              for the film.
+              Contact me any time and everywhere you want. Check all methods of contact and choose
+              the most convenient for you. I usually reply within 2/4 hours.
               <div className='flex w-full justify-around mt-4'>
                 <Link href='/projects' passHref>
                   <a>
-                    <Button type='code' arrow>
+                    <Button type='contact' arrow>
                       Contact me
                     </Button>
                   </a>
                 </Link>
 
                 <a href='mailto:qwercy142@gmail.com'>
-                  <Button type='download'>E-mail</Button>
+                  <Button type='mail'>E-mail</Button>
                 </a>
               </div>
             </SectionTitle>

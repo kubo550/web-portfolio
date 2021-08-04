@@ -8,7 +8,7 @@ interface FooterProps {
 
 const Footer: FC<FooterProps> = ({ scrollToTop }) => {
   return (
-    <footer className='footer bg-gray-800 relative pt-1 snap-center mt-auto'>
+    <footer className='footer bg-gray-800 relative snap-center mt-auto'>
       <div className='container mx-auto px-6'>
         <div className='sm:flex sm:mt-8'>
           <div className='mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-evenly'>
@@ -16,7 +16,7 @@ const Footer: FC<FooterProps> = ({ scrollToTop }) => {
               {scrollToTop && (
                 <button
                   onClick={scrollToTop}
-                  className='inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-black uppercase transition bg-gray-100 rounded-full shadow ripple hover:shadow-lg hover:bg-gray-200 focus:outline-none transform -translate-y-14'
+                  className='inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-black uppercase transition bg-gray-100 rounded-full shadow ripple hover:shadow-lg hover:bg-gray-200 focus:outline-none transform -translate-y-5'
                 >
                   <GrLinkTop size={20} />
                 </button>

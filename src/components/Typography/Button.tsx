@@ -1,18 +1,17 @@
 import { FaUserAlt } from "react-icons/fa";
-import { FiMessageSquare } from "react-icons/fi";
+import { FiMessageSquare, FiMail } from "react-icons/fi";
 import { BiRightArrow } from "react-icons/bi";
 import { HiDownload } from "react-icons/hi";
 import { BiCodeBlock } from "react-icons/bi";
-
 import { forwardRef, ReactNode } from "react";
 
-type ButtonType = "profile" | "download" | "contact" | "code";
+type ButtonType = "profile" | "download" | "contact" | "code" | "mail";
 
 interface ButtonProps {
-  readonly type?: ButtonType;
-  readonly arrow?: boolean;
-  readonly secondary?: boolean;
-  readonly children: ReactNode;
+  type?: ButtonType;
+  arrow?: boolean;
+  secondary?: boolean;
+  children: ReactNode;
 }
 
 const iconByType = new Map<ButtonType, ReturnType<typeof FaUserAlt>>([
@@ -20,6 +19,7 @@ const iconByType = new Map<ButtonType, ReturnType<typeof FaUserAlt>>([
   ["contact", <FiMessageSquare key='contact' size={16} />],
   ["download", <HiDownload key='download' size={16} />],
   ["code", <BiCodeBlock key='code' size={16} />],
+  ["mail", <FiMail key='mail' size={16} />],
 ]);
 
 export const Button = forwardRef<HTMLDivElement, ButtonProps>(

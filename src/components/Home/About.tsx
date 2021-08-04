@@ -9,11 +9,10 @@ const About = () => {
         <div className='col-span-2'>
           <Animation>
             <SectionTitle title='About me' subtitle='Let me introduce myself'>
-              A portfolio for a web designer. We used React JS to make this
-              portfolio. Clean design with full responsiveness. You will find
-              this portfolio very professional. Also, we added smooth scroll in
-              the portfolio which will make the scroll experience really
-              elegant.
+              My personal official web portfolio. I used Next JS to make this
+              project. Clean design with full responsiveness. You will find
+              this portfolio very professional. Also, I added smooth scroll
+              which will make the scroll experience really elegant.
               <div className='flex w-full justify-around mt-4'>
                 <Link href='/about' passHref>
                   <a>

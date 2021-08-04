@@ -21,9 +21,7 @@ const About = () => {
 
       <div className='flex flex-col md:flex-row items-center justify-around'>
         <p className='md:max-w-md text-md xl:text-lg text-gray-100 text-justify'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-          eaque, esse aut autem iste ex eos et reprehenderit eum, vo quae, nihil
-          quod commodi ut neque rerum. Adipisci, deserunt aut.
+          I am 20 yo polish programmer. I just after high school and before studies, so this is the perfect moment to get first job as a forntend-developer. I hope we will come to an agreement.
         </p>
         <Image
           width={400}

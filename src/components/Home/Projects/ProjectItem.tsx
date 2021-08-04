@@ -13,7 +13,7 @@ export const ProjectItem: FC<ItemProps> = ({ item }) => {
     <div className='grid grid-cols-1 bg-green-900 rounded-lg overflow-hidden snap-center'>
       <div className='relative z-10 col-start-1 row-start-1 px-4 pt-40 pb-3 bg-gradient-to-t from-black'>
         <p className='text-xl font-medium text-white'>{item.name}</p>
-        <h2 className='text-sm font-semibold text-white'>{item.description}</h2>
+        <h2 className='text-sm font-semibold text-gray-300'>{item.description}</h2>
       </div>
       <div className='flex w-full justify-around items-center'>
         <Link href={item.code}>
