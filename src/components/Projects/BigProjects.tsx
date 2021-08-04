@@ -21,7 +21,8 @@ export const BigProjects = () => {
             </h5>
           </div>
           <div
-            className={`col-start-1 sm:col-start-1  row-start-2 px-4 pb-0`}
+            className={`col-start-1 sm:col-start-${idx % 2 === 0 ? "1" : "2"
+              }  row-start-2 px-4 pb-0`}
           >
             <div className='flex w-full justify-around'>
               <a href={game.code} target="_blank" rel="noreferrer" title="Check code on github">
@@ -33,7 +34,8 @@ export const BigProjects = () => {
             </div>
           </div>
           <div
-            className={`col-start-1 sm:col-start-1 row-start-3 space-y-3 px-4 mb-4`}
+            className={`col-start-1 sm:col-start-${idx % 2 === 0 ? "1" : "2"
+              } row-start-3 space-y-3 px-4 mb-4`}
           >
             <div className='flex items-center flex-wrap text-black text-sm font-medium'>
               {game.tech_stack.map(el => (
@@ -47,7 +49,8 @@ export const BigProjects = () => {
             </div>
           </div>
           <div
-            className={`col-start-1 row-start-1 flex sm:col-start-2 sm:row-span-3`}
+            className={`col-start-1 row-start-1 flex sm:col-start-${idx % 2 === 0 ? "2" : "1"
+              } sm:row-span-3`}
           >
             <div className='w-full grid grid-cols-3 grid-rows-2 gap-2'>
               <div className='relative col-span-3 row-span-2 my-auto flex justify-center'>
